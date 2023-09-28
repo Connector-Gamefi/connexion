@@ -1,0 +1,192 @@
+.__el-drawer {
+    .el-drawer {
+        background: black;
+    }
+
+    .drawer-body {
+        height: 100%;
+
+        .drawer-header {
+            height: 85px;
+            width: 100%;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+            .close-view {
+                position: absolute;
+                top: 50%;
+                transform: translateX(-50%);
+                right: 20px;
+                width: 19px;
+                height: 19px;
+                cursor: pointer;
+            }
+        }
+
+        .navigation {
+            padding: 0 20px;
+
+            span {
+                cursor: pointer;
+                display: block;
+                margin: 0 8px;
+                font-size: 16px;
+                line-height: 19px;
+                padding: 15px 0;
+                font-weight: bold;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.__form {
+    .el-input__inner {
+        background: transparent;
+        border-radius: 0;
+        border: 1px solid var(--col-static-blue)
+    }
+
+    .el-input-group__append, .el-input-group__prepend {
+        border-radius: 0;
+        background: var(--col-static-blue);
+        border: none;
+    }
+}
+
+.__el-carousel {
+    .el-carousel__mask {
+        background-color: transparent;
+    }
+
+    .el-carousel__container {
+        height: 589px;
+    }
+}
+
+@media screen and(max-width: 920px) {
+    .__el-carousel {
+        .el-carousel__container {
+            height: 589px;
+        }
+    }
+}
+
+@media screen and(min-width: 920px) {
+    .__el-carousel {
+        .el-carousel__container {
+            height: 500px;
+        }
+    }
+}
+
+@media screen and(min-width: 1220px) {
+    .__el-carousel {
+        .el-carousel__container {
+            height: 500px;
+        }
+    }
+}
+
+@media screen and(min-width: 1440px) {
+    .__el-carousel {
+        .el-carousel__container {
+            height: 589px;
+        }
+    }
+}
+
+#dashboard-swiper {
+    .swiper-container-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        width: 90% !important;
+        bottom: 44px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+}
+
+.swiper-pagination {
+    position: absolute;
+    width: 90%;
+    z-index: 9999;
+    height: 60px;
+    bottom: 44px;
+    background: rgba(255, 255, 255, 0.79);
+    backdrop-filter: blur(73px);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%) !important;
+
+    .swiper-pagination-bullet {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+        height: 80%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: rgba(#000000, .9);
+        font-size: 18.8864px;
+        border-radius: 13px;
+        opacity: 1;
+        //font-family: Poppins-ExtraBold;
+
+        &.swiper-pagination-bullet-active {
+            background: white;
+        }
+    }
+}
+
+
+.el-carousel__item--card {
+    width: 785px;
+    height: 558px;
+    position: absolute;
+    left: -14%;
+}
+
+.el-carousel__item {
+    img {
+        width: 661px;
+        height: 470px;
+    }
+
+    &.is-active {
+        img {
+            width: 785px;
+            height: 558px;
+        }
+    }
+
+}
+
+
+.__el-collapse {
+    &.el-collapse {
+        background: #000000;
+        border-top: none;
+        border-bottom: none;
+    }
+    .el-collapse-item__header{
+        background: #000000;
+        border-bottom: 1px solid rgba(#ffffff, .2);
+        color: white;
+        padding: 0 20px;
+    }
+    .el-collapse-item__wrap{
+        background: transparent;
+        border-bottom: none;
+    }
+}

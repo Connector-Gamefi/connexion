@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html, body {
+  font-family:'Poppins',-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    //color: var(--col-white);
+    background: var(--col-body-bg);
+    overflow-x: hidden;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.fix-ios-scroll {
+    -webkit-overflow-scrolling: touch;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+    width: 0;
+}
+
+.scrollbar-hidden {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+}
+
+@media screen and (max-width: 720px) {
+    .__container {
+        width: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 720px) {
+    .__container {
+        width: 100%;
+        padding: 0 40px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .__container {
+        width: 100%;
+        padding: 0 60px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .__container {
+        width: 100%;
+        padding: 0 60px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .__container {
+        width: 1290px;
+        padding: 0;
+        margin: 0 auto;
+    }
+}
+
+
+// loading
+
+.__loading_svg {
+    transform: rotate(-90deg);
+    stroke-linecap: round;
+    stroke-width: 4;
+    fill: none;
+}
+.__loading_svg .loading--inner-circle, .__loading_svg .loading--outer-circle {
+    stroke-dashoffset: 0;
+    transform-origin: center center;
+}
+.__loading_svg .loading--inner-circle {
+    stroke: #4DA4FF;
+    stroke-dasharray: 187;
+    animation: 1s ease-in-out 0s infinite normal none running inner;
+}
+.__loading_svg .loading--outer-circle {
+    stroke-dasharray: 312;
+    animation: 1s linear 0s infinite normal none running outer;
+    stroke: var(--col-white);
+}
+@keyframes inner {
+    0% {
+        stroke-dashoffset: 187;
+    }
+    25% {
+        stroke-dashoffset: 80;
+    }
+    100% {
+        stroke-dashoffset: 187;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes outer {
+    0% {
+        stroke-dashoffset: 312;
+        transform: rotate(70deg);
+    }
+    60% {
+        stroke-dashoffset: -312;
+    }
+    100% {
+        stroke-dashoffset: -312;
+        transform: rotate(450deg);
+    }
+}
