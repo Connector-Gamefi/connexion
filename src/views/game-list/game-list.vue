@@ -6,7 +6,7 @@
             </div>
             <div class="game-list-body">
                 <div class="item game-item game-item-halo animate__animated animate__bounceInLeft pointer"
-                     @click="view('https://monstercreator.games')">
+                     @click="view('http://archloot.com/')">
                     <div class="link flex justify-content-right">
                         <img class="game-link"
                              src="https://d2svbor5ih31il.cloudfront.net/images/banner/eth.png">
@@ -14,7 +14,7 @@
                              src="https://d2svbor5ih31il.cloudfront.net/images/banner/bsc.png">
 
                     </div>
-                    <div class="title game-title BeatriceDisplay-Bold">Monster Creator</div>
+                    <div class="title game-title BeatriceDisplay-Bold">Archloot</div>
                 </div>
                 <div class="item game-item game-item-starfield animate__animated animate__fadeInUp">
                     <div class="link flex justify-content-right">
@@ -132,11 +132,12 @@ export default {
             border-radius: 10px;
 
             &.game-item-halo {
-                background-image: url("https://d2svbor5ih31il.cloudfront.net/images/banner/game-1.png");
+                //background-image: url("https://d2svbor5ih31il.cloudfront.net/images/banner/game-1.png");
+                background-image: url("../../assets/images/banner/archloot.png");
             }
 
             &.game-item-starfield {
-                background-image: url("https://d2svbor5ih31il.cloudfront.net/images/banner/game-2.png");
+                background-image: url("https://d2svbor5ih31il.cloudfront.net/images/banner/game-2.pngarchloot");
             }
 
             &.game-item-city {
